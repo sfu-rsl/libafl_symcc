@@ -108,6 +108,8 @@ void _sym_initialize(void) {
   } else {
     g_log = fopen(g_config.logFile.c_str(), "w");
   }
+
+  _rsym_initialize();
 }
 
 SymExpr _sym_build_integer(uint64_t value, uint8_t bits) {

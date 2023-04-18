@@ -35,6 +35,11 @@ extern "C" {
 typedef uintptr_t RSymExpr;
 
 /*
+ * Initialization
+ */
+void _rsym_initialize(void);
+
+/*
  * Construction of simple values
  */
 RSymExpr _rsym_build_integer(uint64_t value, uint8_t bits);
